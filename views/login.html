@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin | Hospital Management System</title>
+    <link rel="stylesheet" href="{{url_for('static', path='/plugins/fontawesome-free/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='/css/adminlte.min.css')}}">
+</head>
+
+<!-- 
+| =================================================================================
+| LOGIN PAGE - body tag must have .login-page and .bg-white class
+| =================================================================================
+-->
+<body class="hold-transition login-page bg-white">
+
+    <!-- 
+    | =================================================================================
+    | LOGIN FORM (CENTERED)
+    | =================================================================================
+    -->
+    <div class="login-box">
+        <div class="login-logo">
+            <div class="">HoMIES</div>
+        </div>
+
+        <div class="card shadow-none">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Log in to start your session</p>
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                            <input type="email" id="email" class="form-control" name="email" placeholder="Email">
+                            <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <label for="password">Password</label>
+                            <a class="mb-3" href="#">I forgot my password</a>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-lock"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Actions -->
+                    <a href='/admin' class="btn btn-primary btn-block" id="loginBtn">
+                        <span>Log in</span>
+                        <i class="fas fa-sign-in-alt ml-1"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="{{url_for('static', path='/plugins/jquery/jquery.min.js')}}"></script>
+    <!-- Bootstrap 4 -->
+    <script src="{{url_for('static', path='/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{url_for('static', path='/js/adminlte.min.js')}}"></script>
+</body>
+</html>
